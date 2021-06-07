@@ -52,20 +52,45 @@ app.get("/sign-up",(req,res)=>{
 });
 
 app.post("/sign-up",(req,res)=>{
-  if(req.body.passward === req.body.Rpassward){
-    let userdata= new userData({
-      name: req.body.username,
-      username: req.body.username,
-      passward: req.body.passward
-    })
-    userdata.save(err=>{
-      console.log(err);
-    })
-
-    res.redirect("/log-in");
-  }else{
-    res.redirect("/signup");
+  var k=0;
+  userData.find({},(err,users)=>{
+    console.log("In here");
+    console.log(k);
+    for(var i=0;i<users.length;i++){
+      if(users[i].username===req.body.username){
+        k=1;
+        console.log(k);
+        res.redirect("/sign-up");
+        break;
+    }
   }
+  console.log(k);
+
+  });
+
+  setTimeout(() => { console.log("World!");
+  if(k===0){
+    console.log(k);
+    console.log("k not working");
+    var phoneno = /^\d{10}$/;
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if((re.test(String(req.body.username).toLowerCase()) ||  /^\d{10}$/.test(req.body.username)) && req.body.passward === req.body.Rpassward){
+      let userdata= new userData({
+        name: req.body.username,
+        username: req.body.username,
+        passward: req.body.passward
+      })
+      userdata.save(err=>{
+        console.log(err);
+      })
+
+      res.redirect("/log-in");
+      console.log(k);
+    }else{
+        res.redirect("/sign-up");
+    }
+  }
+}, 2000);
 });
 
 
@@ -73,16 +98,27 @@ app.get("/log-in",(req,res)=>{
     res.render("logIn")
 });
 app.post("/log-in",(req,res)=>{
-    userData.find({},(err,user)=>{
-      console.log(user);
-    })
+    var k=true;
     var query = {username: req.body.username}
     console.log(query);
-    userData.find({query},(err,user)=>{
-      console.log(user);
+    userData.find({},(err,user)=>{
+      console.log("Hi");
+      for(var i=0;i<user.length;i++){
+        console.log("lelele");
+        if(user[i].username===req.body.username && user[i].passward===req.body.password){
+          res.redirect("/");
+          console.log("here");
+          k=false
+          break;
+      }
+    }
 
     })
-    res.redirect("/")
+    setTimeout(() => {
+      if(k){
+        res.redirect("/log-in")
+      }},2000)
+
 })
 
 app.get("/add-bank",(req,res)=>{
@@ -148,7 +184,7 @@ app.post('/add-contract-details', upload.single('image'), (req, res, next) => {
 app.get("/contact-us",(req,res)=>{
   res.render("contactUs")
 })
-
-app.listen(3000, ()=>{
-  console.log("Server is listening on port 3000");
-})
+var port = process.env.PORT || 3000
+app.listen(port, function(){
+  console.log("Server is liatening on port 3000");
+});
