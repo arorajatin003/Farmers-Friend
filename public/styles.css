@@ -1,0 +1,392 @@
+body{
+  background-color: black;
+  /* background-image: url(""); */
+  color: white;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+}
+
+
+/* -----------------------nav bar------------------------ */
+
+.custom-nav{
+  padding-right: 15px
+}
+.logo{
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0 ;
+}
+
+.inLine{
+  margin-left: 15px;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.a:link{
+  color:white;
+  text-decoration: none;
+}
+.a:hover{
+  color:#2ed400;
+  font-size: 1.5rem;
+}
+.a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+.a-b:link{
+  background-color: #2ed400;
+  color: white;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+}
+.a-b:hover{
+  background-color: #7d5e2a;
+  color: #2ed400;
+  font-size: 1.5rem;
+}
+.a-b:visited{
+  color: white;
+  text-decoration: none;
+}
+.a-b1:link{
+  background-color: white;
+  color: #2ed400;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+}
+.a-b1:hover{
+  background-color: #7d5e2a;
+  color: white;
+  font-size: 1.5rem;
+}
+.a-b1{
+  color: #2ed400;
+}
+
+/* -------------------------------landing page----------------------------- */
+.landing-page{
+
+  background-size:auto;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  clip: rect(100px, 100px, 200px, 0);
+  padding: 10% 30% 20% 30%;
+  background-color: black;
+  background-image: url("https://images.pond5.com/aerial-view-farming-tractor-plowing-footage-090480041_prevstill.jpeg ");
+  background-position: center;
+  background-attachment: fixed;
+  /* max-width: 100%;
+  max-height: 50%;
+  width: 100%;
+  height: 50%; */
+  /* https://us.123rf.com/450wm/roxichka25/roxichka251603/roxichka25160300025/53790475-farm-machinery-spraying-insecticide-to-the-green-field-agricultural-natural-seasonal-spring-backgrou.jpg?ver=6 */
+  /* https://images.pond5.com/aerial-view-farming-tractor-plowing-footage-090480041_prevstill.jpeg */
+}
+.home-heading{
+  font-size: 3.8rem;
+}
+.home-paragraph{
+  font-size: 1.4rem;
+}
+.link{
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 1.4rem;
+
+}
+.landing-div-links{
+  margin-top: 10%;
+}
+.landing-link1:link{
+  background-color: #2ed400;
+  color: white;
+  padding: 13px 22px;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+}
+.landing-link1:hover{
+  background-color: #7d5e2a;
+  color: #2ed400;
+  font-size: 1.5rem;
+}
+.landing-link1:visited{
+  text-decoration: none;
+  color: white;
+}
+.landing-link2:link{
+  background-color: white;
+  color: #2ed400;
+  padding: 13px 22px;
+  text-align: center;
+  font-weight:500;
+  text-decoration: none;
+}
+.landing-link2:hover{
+  background-color: #7d5e2a;
+  color: #2ed400;
+  font-size: 1.5rem;
+}
+.landing-link2:visited{
+  text-decoration: none;
+}
+
+
+/* -------------------------------Home about------------------------------- */
+
+.aboutUs{
+  /* margin-top: 5%;
+  margin-bottom: 5%; */
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  background-color: #2ed400;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.custom-about-para{
+  /* background-color: #2ed400;
+background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png"); */
+  padding: 5% 1% 5% 1%;
+  /* display: inline-block; */
+}
+.about-para-heading{
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2.7rem;
+}
+.about-para{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.custom-image-about{
+  /* position: relative; */
+  padding: 8% 5% 8% 0;
+  /* display: inline-block; */
+}
+.image-about{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* -------------------------------signup page------------------------------- */
+
+.signup{
+  padding: 5%;
+  text-align: center;
+  background-color: #549400;
+background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.signup-form{
+  text-align: left;
+  padding: 5% 0;
+   /* position: relative; */
+  background-color: #549400;
+   font-size: 1.5rem;
+   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+
+}
+.signup-img{
+  max-width: 90%;
+  height: 300px;
+}
+.signup-form-para{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+
+}
+.signup-form-lable{
+  width: 230px;
+}
+.landing-link2{
+  background-color: #2ed400;
+  color: white;
+  padding: 13px 22px;
+  text-align: center;
+  font-weight:500;
+  text-decoration: none;
+}
+.log-in{
+  text-align: center;
+  background-image: url("images/background-signup.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+}
+.log-in{
+  padding: 5% 0;
+  font-size: 1.5rem;
+}
+.signup-form-text{
+  color: white;
+  padding: 5px;
+}
+.login-form-lable{
+  display: inline-block;
+  background-color: black;
+
+}
+.signup-form-text-a{
+  color: black;
+}
+
+/* ------------------------------- bank--------------------------------*/
+
+.bank-img{
+  max-width: 300px;
+  max-height: 300px;
+  width: 300px;
+  /* height:300px; */
+  margin: 40px;
+}
+
+.banks-page{
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  /* background-color: #0c9400; */
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("images/WhatsApp Image 2021-04-27 at 12.32.00 PM.jpeg");
+}
+.bank-heading{
+  background-color: black;
+  padding: 6px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.custom{
+  max-width: 1000px;
+  max-height: 500px;
+  width: 1000px;
+  height: 500px;
+}
+/* .slider-bg{
+  background-image: url("images/WhatsApp Image 2021-04-27 at 12.32.00 PM.jpeg");
+  background-color: #0c9400;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+} */
+/* ------------------------------contract farming--------------------- */
+
+/* .members_div{
+  text-align: left;
+  padding: 3% 10%;
+
+} */
+.member_detail_div{
+  padding: 0 1%;
+  font-size: 1em;
+}
+
+.container-member {
+  position: relative;
+  width: 20rem;
+  margin:50px auto;
+}
+
+.image {
+  width: 20rem;
+  height: 20rem;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #343a40;
+  overflow: hidden;
+  width: 100%;
+  max-width: 20rem;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container-member:hover .overlay {
+  height: 60%;
+}
+
+.text {
+  white-space: nowrap;
+  text-align: center;
+  color: #f0ece2;
+  font-size: 18px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.contract{
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #045700;
+background-image: url("images/back.jpeg");
+text-align: center;
+color: black;
+padding-top: 20px;
+}
+
+/*----------------------------- add contract--------------------------- */
+
+.newInput{
+  padding: 1% 15%;
+  /* text-align: left; */
+  line-height: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #045700;
+background-image: url("images/windmil.jpeg");
+text-align: center;
+}
+.new-member-lable{
+  font-size: 1.4em;
+  line-height: 2.5;
+  width: 200px;
+  font-weight: 700;
+}
+
+/* contactUs */
+
+.contactUs{
+  text-align: left;
+  padding: 3% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #045700;
+background-image: url("images/back3.jpeg");
+
+}
+
+
+/* -------------------------------footer------------------------------- */
+.custom-footer{
+  background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.follow{
+  text-align: center;
+}

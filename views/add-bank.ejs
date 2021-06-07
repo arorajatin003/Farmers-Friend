@@ -1,0 +1,26 @@
+<%- include("partials/header") -%>
+  <div class="new-bank">
+      <h1 class="new-bank-heading">A decision for nature.</h1>
+      <p class="new-bank-para" >Its Simple and Safe</p>
+      <form class="new-bank-form" action="/add-bank" method="post">
+        <div class="new-bank-div">
+          <label class="new-bank-lable" for="bankName" >Bank name: </label>
+          <input type="text" name="bankName"  placeholder="Name of bank" required><br><br>
+
+          <label class="new-bank-lable" for="branch">Branch:</label>
+          <input type="text" name="branch" required><br><br>
+
+          <label class="new-bank-lable" for="hdfcCode">Hdfc code:</label>
+          <input type="text" name="hdfcCode" required><br><br>
+
+          <label class="new-bank-lable" for="address">Address:</label>
+          <input type="text" name="address" required><br><br>
+
+          <label class="new-bank-lable" for="offer">Offers:</label>
+          <input type="text" name="offer" required><br><br>
+
+          <button class="landing-link2" type="submit" name="button">Welcome to future</button>
+        </div>
+      </form>
+  </div>
+<%- include("partials/footer") -%>

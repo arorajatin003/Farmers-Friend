@@ -1,0 +1,43 @@
+<%- include("partials/header") -%>
+
+
+
+<div class="newInput">
+  <h1>Get your contract listed with us!</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- <img class="image-" src="images/wadiya.jpeg" alt=""> -->
+      </div>
+      <div class="col-lg-6">
+        <form class="newMemberForm" action="/add-contract-details" method="post" enctype="multipart/form-data">
+          <label for="name" class="new-member-lable">Company Name:</label>
+          <input type="text" name="name" value="" placeholder="Name of your Company" required><br>
+
+          <label for="crop" class="new-member-lable">Crop name:</label>
+          <input type="text" name="crop" value="" placeholder="Crop name" required><br>
+
+          <label for="requirnemt" class="new-member-lable">Your Requirments: </label>
+          <input type="text" name="requirnemt" value="" placeholder="required amount(in Kgs)"><br>
+
+          <label for="email" class="new-member-lable">Your Email: </label>
+          <input type="text" name="email" value="" placeholder="Email address" required><br>
+
+          <label for="amount" class="new-member-lable">Payable amount: </label>
+          <input type="text" name="amount" value="" placeholder="Amount you can pay(in Rs)"><br>
+
+          <label for="comments" class="new-member-lable">Additional comments: </label>
+          <input type="text" name="comments" value="" placeholder="Special requirment" required><br>
+
+          <label for="image" class="new-member-lable">Display Picture:</label>
+          <input type="file" id="image" name="image" value="" required><br>
+
+          <input class="btn"type="submit">
+        </form>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+<%- include("partials/footer") -%>

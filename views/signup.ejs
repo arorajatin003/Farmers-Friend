@@ -1,0 +1,26 @@
+<%- include("partials/header") -%>
+  <div class="signup">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="signup-img" src="https://images.yourstory.com/cs/2/dc9aa1302d6c11e9aa979329348d4c3e/AgritechYourStory-01-1592899063258-1607619759661.png" alt="Connecting people">
+        </div>
+        <div class="col-lg-6">
+          <h1>Sign UP with FARMERS FRIEND</h1>
+          <p class="signup-form-para" >Its Simple and Safe</p>
+          <form class="signup-form" action="/sign-up" method="post">
+            <div class="">
+              <label class="signup-form-lable" for="username" >Username: </label>
+              <input type="text" name="username"  placeholder="Email or phoneNumber" required><br><br>
+              <label class="signup-form-lable" for="password">Passward: </label>
+              <input type="password" name="passward" required><br><br>
+              <label class="signup-form-lable" for="password">Re-enter Passward: </label>
+              <input type="password" name="Rpassward" required><br><br>
+              <button class="landing-link2" type="submit" name="button">Welcome to future</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include("partials/footer") -%>
