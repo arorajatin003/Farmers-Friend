@@ -7,9 +7,7 @@ const multer = require('multer');
 const contracterModel = require('./contracters');
 const app = express()
 
-mongoose.connect("mongodb+srv://Jatin-arora-admin:Jatinarora003@cluster0.osicw.mongodb.net/sepmLab", {useNewUrlParser: true,useUnifiedTopology: true});
-// mongodb://localhost:27017/
-//mongodb+srv://Jatin-arora-admin:Jatinarora003@cluster0.osicw.mongodb.net/sepmLab
+mongoose.connect("mongodb://localhost:27017/sepmLab", {useNewUrlParser: true,useUnifiedTopology: true});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs")
